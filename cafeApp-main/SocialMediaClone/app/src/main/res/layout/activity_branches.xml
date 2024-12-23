@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.BranchesActivity"
+    android:background="@drawable/background_app">
+
+
+
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        tools:context=".view.BranchesActivity"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/map_background"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sube1"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:alpha="0.9"
+        android:background="@drawable/bottom_background"
+        map:layout_constraintTop_toBottomOf="@+id/map">
+
+        <TextView
+            android:id="@+id/subeAd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. ŞUBE"
+            android:textColor="@color/white"
+            map:layout_constraintTop_toTopOf="parent"
+            map:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mustafa Kemal Mahallesi, 4112/2 sok 4 f,
+
+
+
+
+
+
+
+
+            Menemen/İzmir"
+            android:textColor="@color/white"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toBottomOf="@id/subeAd1"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:id="@+id/calismaSaatleri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anlık Durum"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            map:layout_constraintTop_toTopOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"/>
+
+        <View
+            android:id="@+id/brancheFirstSupporter"
+            android:layout_width="75dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintTop_toTopOf="@+id/calismaSaatleri" />
+
+        <TextView
+            android:id="@+id/firstBranchStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kapalı"
+            android:textColor="@color/white"
+            map:layout_constraintTop_toBottomOf="@id/brancheFirstSupporter"
+            map:layout_constraintStart_toStartOf="@id/brancheFirstSupporter"
+            map:layout_constraintEnd_toEndOf="@id/brancheFirstSupporter"
+            android:layout_marginTop="10dp"
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sube2"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:alpha="0.9"
+        android:background="@drawable/bottom_background"
+        map:layout_constraintTop_toBottomOf="@+id/sube1"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:id="@+id/subeAd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. ŞUBE"
+            android:textColor="@color/white"
+            map:layout_constraintTop_toTopOf="parent"
+            map:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İnönü Mahallesi, 9 Eylül Cd. D:No:92,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             Menemen/İzmir"
+            android:textColor="@color/white"
+            map:layout_constraintTop_toBottomOf="@id/subeAd2"
+            map:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:id="@+id/calismaSaatleri2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anlık Durum"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            map:layout_constraintTop_toTopOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <View
+            android:id="@+id/brancheSecondSupporter"
+            android:layout_width="75dp"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintTop_toTopOf="@id/calismaSaatleri2"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/secondBranchStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Kapalı"
+            android:layout_marginTop="10dp"
+            map:layout_constraintEnd_toEndOf="@id/brancheSecondSupporter"
+            map:layout_constraintStart_toStartOf="@id/brancheSecondSupporter"
+            map:layout_constraintTop_toBottomOf="@id/brancheSecondSupporter"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        map:layout_constraintBottom_toBottomOf="parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_background"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:alpha="0.9"
+        android:elevation="2dp"
+        map:menu="@menu/bottom_menu"
+        map:itemIconSize="30dp"
+        map:itemIconTint="@drawable/item_selector"
+        map:itemRippleColor="@android:color/transparent"
+        map:labelVisibilityMode="unlabeled"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.RegisterActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/diablocoffee" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLayerDark" />
+
+
+    <TextView
+        android:id="@+id/emailTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:layout_marginStart="5dp"
+        android:text="EMAIL"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@id/viewEmailDivider"
+        app:layout_constraintStart_toEndOf="@id/imageEmail"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="email@gmail.com"
+        android:inputType="textEmailAddress"
+        android:minHeight="35dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/colorTextHint"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageEmail"
+        app:layout_constraintTop_toBottomOf="@id/emailTxt"
+        tools:ignore="Autofill"
+        />
+    
+    <View
+        android:id="@+id/viewEmailDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/colorTextHint"
+        app:layout_constraintTop_toBottomOf="@id/inputEmail"
+        />
+    
+    <ImageView
+        android:id="@+id/imageEmail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_baseline_alternate_email"
+        app:layout_constraintTop_toTopOf="@id/emailTxt"
+        app:layout_constraintBottom_toTopOf="@id/viewEmailDivider"
+        app:layout_constraintStart_toStartOf="@id/viewEmailDivider"
+        app:tint="@color/white"
+        />
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/phoneNumberTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        android:text="PHONE NUMBER"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@id/viewEmailDivider"
+        app:layout_constraintStart_toEndOf="@id/imageEmail"
+        app:layout_constraintTop_toBottomOf="@id/viewEmailDivider"
+        />
+
+
+    <EditText
+        android:id="@+id/inputPhoneNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="0 (___) ___ __ __"
+        android:inputType="phone"
+        android:minHeight="35dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/colorTextHint"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageEmail"
+        app:layout_constraintTop_toBottomOf="@id/phoneNumberTxt"
+        tools:ignore="Autofill"
+        />
+
+
+    <View
+        android:id="@+id/viewPhoneNumberDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/colorTextHint"
+        app:layout_constraintTop_toBottomOf="@id/inputPhoneNumber"
+        />
+
+
+    <ImageView
+        android:id="@+id/imagePhoneNumber"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_baseline_phone"
+        app:layout_constraintTop_toTopOf="@id/phoneNumberTxt"
+        app:layout_constraintBottom_toTopOf="@id/viewPhoneNumberDivider"
+        app:layout_constraintStart_toStartOf="@id/viewPhoneNumberDivider"
+        app:tint="@color/white"
+        />
+
+
+
+
+
+    <TextView
+        android:id="@+id/nameTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        android:text="NAME"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@id/viewPhoneNumberDivider"
+        app:layout_constraintStart_toEndOf="@id/imagePassword"
+        app:layout_constraintTop_toBottomOf="@id/viewPhoneNumberDivider"
+        />
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="enter name"
+        android:inputType="text"
+        android:minHeight="35dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/colorTextHint"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imagePassword"
+        app:layout_constraintTop_toBottomOf="@id/nameTxt"
+        tools:ignore="Autofill"
+        />
+
+    <View
+        android:id="@+id/viewNameDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/colorTextHint"
+        app:layout_constraintTop_toBottomOf="@id/inputName"
+        />
+
+    <ImageView
+        android:id="@+id/imageName"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_baseline_drive_file_rename_outline"
+        app:layout_constraintTop_toTopOf="@id/nameTxt"
+        app:layout_constraintBottom_toTopOf="@id/viewNameDivider"
+        app:layout_constraintStart_toStartOf="@id/viewNameDivider"
+        app:tint="@color/white"
+        />
+
+
+
+
+
+    <TextView
+        android:id="@+id/surnameTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        android:text="SURNAME"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@id/viewNameDivider"
+        app:layout_constraintStart_toEndOf="@id/imageName"
+        app:layout_constraintTop_toBottomOf="@id/viewNameDivider"
+        />
+
+    <EditText
+        android:id="@+id/inputSurname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="enter surname"
+        android:inputType="text"
+        android:minHeight="35dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/colorTextHint"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageName"
+        app:layout_constraintTop_toBottomOf="@id/surnameTxt"
+        tools:ignore="Autofill"
+        />
+
+    <View
+        android:id="@+id/viewSurnameDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/colorTextHint"
+        app:layout_constraintTop_toBottomOf="@id/inputSurname"
+        />
+
+    <ImageView
+        android:id="@+id/imageSurname"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_baseline_drive_file_rename_outline"
+        app:layout_constraintTop_toTopOf="@id/surnameTxt"
+        app:layout_constraintBottom_toTopOf="@id/viewSurnameDivider"
+        app:layout_constraintStart_toStartOf="@id/viewSurnameDivider"
+        app:tint="@color/white"
+        />
+
+
+
+
+
+    <TextView
+        android:id="@+id/passwordTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        android:text="PASSWORD"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@id/viewSurnameDivider"
+        app:layout_constraintStart_toEndOf="@id/imageSurname"
+        app:layout_constraintTop_toBottomOf="@id/viewSurnameDivider"
+        />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="******"
+        android:inputType="numberPassword"
+        android:minHeight="35dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/colorTextHint"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageSurname"
+        app:layout_constraintTop_toBottomOf="@id/passwordTxt"
+        tools:ignore="Autofill"
+        />
+
+    <View
+        android:id="@+id/viewPasswordDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/colorTextHint"
+        app:layout_constraintTop_toBottomOf="@id/inputPassword"
+        />
+
+    <ImageView
+        android:id="@+id/imagePassword"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_baseline_lock"
+        app:layout_constraintTop_toTopOf="@id/passwordTxt"
+        app:layout_constraintBottom_toTopOf="@id/viewPasswordDivider"
+        app:layout_constraintStart_toStartOf="@id/viewPasswordDivider"
+        app:tint="@color/white"
+        />
+
+
+
+
+
+    <TextView
+        android:id="@+id/passwordAgainTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        android:text="PASSWORD (AGAIN)"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@id/viewPasswordDivider"
+        app:layout_constraintStart_toEndOf="@id/imagePassword"
+        app:layout_constraintTop_toBottomOf="@id/viewPasswordDivider"
+        />
+
+    <EditText
+        android:id="@+id/inputPasswordAgain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="******"
+        android:inputType="numberPassword"
+        android:minHeight="35dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/colorTextHint"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imagePassword"
+        app:layout_constraintTop_toBottomOf="@id/passwordAgainTxt"
+        tools:ignore="Autofill"
+        />
+
+    <View
+        android:id="@+id/viewPasswordAgainDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/colorTextHint"
+        app:layout_constraintTop_toBottomOf="@id/inputPasswordAgain"
+        />
+
+    <ImageView
+        android:id="@+id/imagePasswordAgain"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_baseline_lock"
+        app:layout_constraintTop_toTopOf="@id/passwordAgainTxt"
+        app:layout_constraintBottom_toTopOf="@id/viewPasswordAgainDivider"
+        app:layout_constraintStart_toStartOf="@id/viewPasswordAgainDivider"
+        app:tint="@color/white"
+        />
+
+
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:onClick="signUp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="SIGN UP"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/viewPasswordAgainDivider"
+        />
+    
+    <TextView
+        android:id="@+id/hesabaSahip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="haveAccount"
+        android:layout_marginTop="15dp"
+        android:text="Do you have account?"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSignUp"
+
+
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

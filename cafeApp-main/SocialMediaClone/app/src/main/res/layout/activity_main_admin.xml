@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainAdminActivity">
+
+    <Button
+        android:id="@+id/addNewCoffeeBtn"
+        android:onClick="addNewProductBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="yeni ürün ekle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/addNewTypeBtn"
+        android:onClick="goAddTypeActivity"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="yeni tür ekle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addNewCoffeeBtn"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/addNewInnovationBtn"
+        android:onClick="goAddInnovationActivity"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="yeni haber ekle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addNewTypeBtn"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/branchStatus1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Şube Durumu : "
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/addNewInnovationBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <Switch
+        android:id="@+id/FirstBranchStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/branchStatus1"
+        app:layout_constraintBottom_toBottomOf="@id/branchStatus1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/branchStatus1"/>
+
+
+
+    <TextView
+        android:id="@+id/branchStatus2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Şube Durumu : "
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/branchStatus1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <Switch
+        android:id="@+id/SecondBranchStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/branchStatus2"
+        app:layout_constraintBottom_toBottomOf="@id/branchStatus2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/branchStatus2"/>
+
+    <Button
+        android:id="@+id/updateBranchesStatus"
+        android:onClick="updateBranchesStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="şubelerin durumunu güncelle"
+        app:layout_constraintTop_toBottomOf="@id/branchStatus2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

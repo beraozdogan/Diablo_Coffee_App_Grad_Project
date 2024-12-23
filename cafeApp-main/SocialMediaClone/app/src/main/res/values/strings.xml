@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DİⱯBLO</string>
+    <string name="welcome">welcome</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="create_account">create account</string>
+    <string name="yeni_nesil_kahve_d_kkan">Yeni Nesil Kahve Dükkanı</string>
+    <string name="open">open drawer layout</string>
+    <string name="close">close drawer layout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_branches">BranchesActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+</resources>

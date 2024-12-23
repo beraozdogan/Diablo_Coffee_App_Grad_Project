@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.AddNewInnovationActivity">
+
+    <ImageView
+        android:id="@+id/innovationImage"
+        android:onClick="selectImage"
+        android:layout_width="250dp"
+        android:layout_height="206dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/select" />
+
+    <EditText
+        android:id="@+id/innovationNameTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ürün adını giriniz"
+        app:layout_constraintTop_toBottomOf="@id/innovationImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/innovationContentTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="yenilik içeriği giriniz"
+        app:layout_constraintTop_toBottomOf="@id/innovationNameTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/btninnovationEkle"
+        android:onClick="innovationEkle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="yenilik ekle"
+        app:layout_constraintTop_toBottomOf="@+id/innovationContentTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/goBackBtn"
+        android:onClick="geriDon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Geri Dön"
+        app:layout_constraintTop_toBottomOf="@+id/btninnovationEkle"
+        app:layout_constraintEnd_toEndOf="@id/innovationContentTxt"
+        android:layout_marginTop="30dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
